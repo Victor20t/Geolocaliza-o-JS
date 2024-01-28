@@ -23,7 +23,7 @@ function success(pos) {
             fetch('dados.geojson')
             .then(response => response.json())
             .then(data => {
-                L.geoJSON(data, { color: 'green' }).addTo(map);
+                L.geoJSON(data, { color: 'red' }).addTo(map);
             });
 
     } else {
